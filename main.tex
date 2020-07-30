@@ -1,0 +1,95 @@
+\documentclass{simple_resume}[2020/07/29]
+
+\begin{document}
+
+% ---------------------------------------------------------
+%                       Header + Footer
+%----------------------------------------------------------
+\makeheader{Viren Bajaj} %name
+           {10 Kasch Ct, Monroe, NY 10950} %address
+           {(412)-737-4028} %phone
+           {viren.bajaj@columbia.edu} %email
+           {viren-bajaj} %linkedin
+           {virenbajaj} %github
+
+\makefooter{\today}
+           {Viren Bajaj~~~·~~~Résumé}
+           {\thepage}
+% ---------------------------------------------------------
+%                       Education
+%----------------------------------------------------------
+\section{Education}
+% \locatedsubsection{Carnegie Mellon University}{Pittsburgh, PA}
+% \datedsubsection{B.S. in Physics (Computer Science Minor)}{May 2018}
+% {\textit{B.S. in Physics (Computer Science Minor)} \hfill May 2018}
+\educationentry{Columbia University} % University
+               {New York, NY} % Location
+               {M.S. in Computer Science (Machine Learning)} %degree
+               {Dec 2021} % Graduation month and year
+               {Wine 101} % Courses
+\vspace{-1ex}               
+\educationentry[Mellon College of Science Research Honors] %optional honors
+               {Carnegie Mellon University} %university
+               {Pittsburgh, PA} %location
+               {B.S. in Physics (Computer Science Minor)} %degree
+               {May 2018} %graduation month and year
+               {Machine Learning (Grad), Cognitive Robotics, Practical Data Science, Cyber Phyical Systems} % courses
+
+% ---------------------------------------------------------
+%                       Skills
+%----------------------------------------------------------
+\section{Technical Skills}
+
+\begin{skills}
+    \skill  {Languages}  {Python, MATLAB, C / C++}
+    \skill {Frameworks}  {TensorFlow, OpenCV, Jupyter, Pandas, GeoPandas,                             Matplotlib, seaborn, Folium, Flask}
+    \skill {Databases}   {MySQL, PostgreSQL, Overpass API}
+    \skill {Other Tools} {Git, GNURadio, Mission Planner, ROS, Aerostack,                             ROOT}
+\end{skills}
+\vspace{-1.5ex}
+% ---------------------------------------------------------
+%                       Experience
+%----------------------------------------------------------
+\section{Experience}
+% \locatedsubsection{NASA Langley Research Center {[National Institute of Aerospace]}} {Hampton, VA}
+\experienceentry{NASA Langley Research Center {[National Institute                  of Aerospace]}} % Employer
+                {Hampton, VA} % Location
+                {Associate Research Engineer} %Position
+                {Oct 2018 - Jul 2020} % Time
+{\begin{items}
+    \item {published ...}
+    \item {developed ...}
+    \item {constructed ...}
+    \item {tested ...}
+\end{items}}
+\vspace{-1ex}
+\datedsubsection{Visiting Student}{May 2017 - Jul 2017}
+{\begin{items}
+    \item {implemented ...}
+\end{items}}
+
+\experienceentry{Department of Physics, Carnegie Mellon University} % Employer
+                {Pittsburgh, PA} % Location
+                {Research Assistant to Prof. Reinhard Schumacher} %Position
+                {May 2016 - May 2017} % Time
+{\begin{items}
+    \item {presented ...}
+    \item {discovered ...}
+    \item {}
+\end{items}}
+
+% ---------------------------------------------------------
+%                       Projects
+%----------------------------------------------------------
+\section{Projects}
+\experienceentry{Verifiably Safe SCUBA Diving using Commodity Sensors}%Employer
+                {Pittsburgh, PA} % Location
+                {Research advised by Prof. André Platzer, CMU} %Position
+                {Jan 2017 - Oct 2018} % Time
+{\begin{items}
+    \item {published ...}
+    \item {developed and verified ...}
+\end{items}}
+% \section{Interests}
+% {Basketball, Bouldering}
+\end{document}
