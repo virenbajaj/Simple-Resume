@@ -1,4 +1,4 @@
-\documentclass{simple_resume}[2020/07/29]
+\documentclass[11pt, letterpaper]{simple_resume}[2020/07/29]
 
 \begin{document}
 
@@ -13,8 +13,8 @@
            {virenbajaj} %github
 
 \makefooter{\today}
-           {Viren Bajaj~~~·~~~Résumé}
-           {\thepage}
+          {Viren Bajaj · Résumé}
+          {\thepage}
 % ---------------------------------------------------------
 %                       Education
 %----------------------------------------------------------
@@ -25,15 +25,15 @@
 \educationentry{Columbia University} % University
                {New York, NY} % Location
                {M.S. in Computer Science (Machine Learning)} %degree
-               {Dec 2021} % Graduation month and year
-               {Wine 101} % Courses
+               {Expected Dec 2021} % Graduation month and year
+               {Advanced Machine Learning} % Courses
 \vspace{-1ex}               
-\educationentry[Mellon College of Science Research Honors] %optional honors
+\educationentry[Mellon College of Science Research Honors; Dean's List,                   High Honors (Spring'16); Dean's List (Spring'18)]                       %optional honors
                {Carnegie Mellon University} %university
                {Pittsburgh, PA} %location
-               {B.S. in Physics (Computer Science Minor)} %degree
+               {B.S. in Physics (Minor in Computer Science); GPA: 3.42} %degree
                {May 2018} %graduation month and year
-               {Machine Learning (Grad), Cognitive Robotics, Practical Data Science, Cyber Phyical Systems} % courses
+               {Machine Learning (Graduate Level), Cognitive Robotics, Practical Data Science, Cyber Physical Systems} % courses
 
 % ---------------------------------------------------------
 %                       Skills
@@ -44,9 +44,9 @@
     \skill  {Languages}  {Python, MATLAB, C / C++}
     \skill {Frameworks}  {TensorFlow, OpenCV, Jupyter, Pandas, GeoPandas,                             Matplotlib, seaborn, Folium, Flask}
     \skill {Databases}   {MySQL, PostgreSQL, Overpass API}
-    \skill {Other Tools} {Git, GNURadio, Mission Planner, ROS, Aerostack,                             ROOT}
+    \skill {Other Tools} {Git, \TeX, GNURadio, Mission Planner, ROS, Aerostack,                             ROOT}
 \end{skills}
-\vspace{-1.5ex}
+
 % ---------------------------------------------------------
 %                       Experience
 %----------------------------------------------------------
@@ -57,25 +57,37 @@
                 {Associate Research Engineer} %Position
                 {Oct 2018 - Jul 2020} % Time
 {\begin{items}
-    \item {published ...}
-    \item {developed ...}
-    \item {constructed ...}
-    \item {tested ...}
+    \item {Conceptualized a Radio Frequency Interference (RFI) service for UAS to avoid RF hazards in urban airspace with a cross-functional team of ten researchers (\textit{papers to be published soon})}
+    \item {Co-led \$300K sensor network  acquisition and install after building a prototype service by performing signal processing with GNURadio and creating Radio Environment Maps with GeoPandas, PyKrige, and Folium}
+    \item {Developed online RF sensing algorithms: modulation classifier in TensorFlow, RSSI predictor in MATLAB }
+    \item {Co-developed a reinforcement learning based guidance selector for a UAS sense-and-avoid algorithm; published research paper in International Conference on Dependable, Autonomic and Secure Computing 2019}
 \end{items}}
+
 \vspace{-1ex}
-\datedsubsection{Visiting Student}{May 2017 - Jul 2017}
+
+\experienceentry{FasicuChain}{Dubai, UAE}{Co-founder}{May 2018 - Sept 2018}
 {\begin{items}
-    \item {implemented ...}
-\end{items}}
+    \item {Generated and pitched idea, sales, and investment decks with three co-founders of FasicuChain - an \\ 
+    anti-counterfeiting track-and-trace solution featuring uncloneable labels and blockchain} 
+    \item {Managed an agile team of three to develop FasicuChain Android application}
+\end{items}
+}
+\vspace{-1ex}
+% \datedsubsection{Visiting Student}{May 2017 - Jul 2017}
+% {\begin{items}
+
+%     \item {Built a testbed to study failure modes of machine learning based planning algorithms by equipping a rover with a Pixhawk, PixyCam, and Aerostack - a ROS/C++ based modular framework autonomous vehicles}
+%     % \item {Built a test-bed to study failure modes of motion planning algorithms based on machine learning}
+%     % \item {Installed \href{https://github.com/Vision4UAV/Aerostack/wiki/What-is-Aerostack}{Aerostack}, a modular framework for autonomous aerial robotic systems, using ROS/C++ on a hpi-racing e-buggy and equipped it with a Pixhawk autopilot and PixyCam vision sensor}
+% \end{items}}
 
 \experienceentry{Department of Physics, Carnegie Mellon University} % Employer
                 {Pittsburgh, PA} % Location
                 {Research Assistant to Prof. Reinhard Schumacher} %Position
                 {May 2016 - May 2017} % Time
 {\begin{items}
-    \item {presented ...}
-    \item {discovered ...}
-    \item {}
+    \item {Discovered reaction mechanism of proton antiproton photo-production to be t-channel dominated by performing statistical analyses in ROOT/C++ on data from the Thomas Jefferson National Accelerator Facility}
+    \item {Presented poster at the 2017 Annual Meeting of Division of Nuclear Physics, American Physical Society}
 \end{items}}
 
 % ---------------------------------------------------------
@@ -84,11 +96,12 @@
 \section{Projects}
 \experienceentry{Verifiably Safe SCUBA Diving using Commodity Sensors}%Employer
                 {Pittsburgh, PA} % Location
-                {Research advised by Prof. André Platzer, CMU} %Position
+                {Research advised by Prof. André Platzer, Carnegie Mellon University} %Position
                 {Jan 2017 - Oct 2018} % Time
 {\begin{items}
-    \item {published ...}
-    \item {developed and verified ...}
+    % \item {Created a SCUBA diving computer program which increases dive time and reduces risk of decompression sickness by using commodity heart rate sensors - modeled in differential dynamic logic and verified using KeYmaeraX theorem prover}
+    \item{Created and verified a novel model and control algorithm for diving, preventing need for a hose or wireless transmitter by indirectly estimating a diver’s oxygen consumption using commodity heart rate sensors}
+    \item {Published research paper in The International Conference on Embedded Software 2019 (WiP Track);\\ presentation won second prize at Verification and Validation Grand-Prix 2016 at Carnegie Mellon University}
 \end{items}}
 % \section{Interests}
 % {Basketball, Bouldering}

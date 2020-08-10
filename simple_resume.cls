@@ -1,14 +1,15 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{simple_resume}[2020/07/29 My custom simple resume class]
+\ProvidesClass{simple_resume}[2020/07/30 My custom simple resume class]
 \LoadClass{article}
-
+% \RequirePackage{fontspec}
+% \settmainfont{[Tahoma.ttf]}
 \RequirePackage{titlesec}
 % Needed to configure page layout
 \RequirePackage{geometry}
 % Needed to make header & footer effeciently
 \RequirePackage{fancyhdr}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{setspace}
 \RequirePackage{xifthen}
@@ -21,7 +22,7 @@
 %----------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1in, top=1in, right=1in, bottom= 1in, footskip=12pt}
+\geometry{left=0.8in, top=0.5in, right=0.8in, bottom= 0.5in, footskip=24pt}
 % Remove head rule
 \renewcommand{\headrulewidth}{0pt}
 % Clear all header & footer fields
@@ -36,13 +37,13 @@
 \newcommand{\headersep}{ | }
 \newcommand{\makeheader}[6]{
     \begin{center}
-        {\LARGE \textbf{#1}} \\
+        {\LARGE \textbf{#1}} \\ % name
         \vspace{1ex}
-        {#2} \\
+        {#2} \\ % address
         \vspace{1ex}
-        {#3} \headersep 
-        {\href{mailto:#4}{#4}} \headersep 
-        \href{https://www.linkedin.com/in/#5}{\faLinkedinSquare \hspace{.1em} #5} \headersep
+        {\faMobile \ #3} \headersep 
+        {\href{mailto:#4}{\faEnvelope \ #4}} \headersep 
+        \href{https://www.linkedin.com/in/#5}{\faLinkedinSquare \ #5} \headersep
         \href{https://www.github.com/#6}{\faGithubSquare \hspace{.1em} #6}
     \end{center}
 }
